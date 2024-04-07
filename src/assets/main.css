@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #965a3e;
+}
+
+:root {
+  --primary-color: black; /* Черный цвет */
+}
+
+/* Убрать подчеркивание текста */
+a {
+  text-decoration: none;
+}
+
+.logo {
+  /* Размер логотипа */
+  width: 40px;
+  height: 40px;
+}
+/* Пример типографики */
+body {
+  font-family:
+    Comic Sans MS,
+    Comic Sans,
+    cursive; /* Используйте любой шрифт, который вам нравится */
+  font-size: 30px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Пример адаптивного изображения */
+.img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  flex: 1 1 auto;
+}
+.categories-container {
+  display: flex;
+  justify-content: center; /* Центрировать содержимое по горизонтали */
+}
+
+.list-none {
+  list-style: none;
+  padding: 0;
+}
+.list-none li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-none li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.categories-container {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.border {
+  border-width: 1px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transition {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-base {
+  font-size: 1.125rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-gray-500 {
+  color: #718096;
+}
+
+/* Медиа-запрос для адаптации размера изображения на мобильных устройствах */
+@media only screen and (max-width: 768px) {
+  .responsive-img {
+    max-width: 100%;
+  }
+}
